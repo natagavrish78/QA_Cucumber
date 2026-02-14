@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomePage" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-14T12:21:52.708Z" hostname="BARAKKUDA" time="2.689">
+  <properties/>
+  <testcase name="Verify HomePage title is displayed" classname="HomePage" time="2.689"/>
+  <system-out><![CDATA[
+@navigate
+?[1mScenario:?[22m Verify HomePage title is displayed       ?[90m# src/test/resources/features/navigate.feature:4?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser launches Chrome browser?[39m             ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.launch_Chrome_browser()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser opens ilcarro HomePage?[39m               ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.open_ilcarro_HomePage()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mUser verifies HomePage title is displayed?[39m ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.verify_HomePage_title()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser closes browser?[39m                        ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.quit_browser()?[39m
+]]></system-out>
+  <system-err><![CDATA[февр. 14, 2026 1:21:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 145, returning the closest version; found: 144; Please update to a Selenium version that supports CDP version 145
+]]></system-err>
+</testsuite>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-02-14T12:21:48.958Z" hostname="BARAKKUDA" time="3.749">
+  <properties/>
+  <testcase name="Successful login" classname="Login" time="3.749">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step 'User clicks on Login Link' is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;User clicks on Login Link&quot;)&#10;public void user_clicks_on_login_link() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'User clicks on Login Link' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When(&quot;User clicks on Login Link&quot;)
+public void user_clicks_on_login_link() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+@LoginPositive
+?[1mScenario:?[22m Successful login                          ?[90m# src/test/resources/features/login.feature:4?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser launches Chrome browser?[39m              ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.launch_Chrome_browser()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser opens ilcarro HomePage?[39m                ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.open_ilcarro_HomePage()?[39m
+  ?[33m■?[39m ?[33m?[1mAnd ?[22mUser clicks on Login Link?[39m
+  ?[36m↷?[39m ?[36m?[1mAnd ?[22mUser enters correct data?[39m                    ?[90m# com.ilcarro.stepDefinitions.LoginSteps.enter_correct_data()?[39m
+  ?[36m↷?[39m ?[36m?[1mAnd ?[22mUser clicks on Yalla button?[39m                 ?[90m# com.ilcarro.stepDefinitions.LoginSteps.click_on_Yalla_button()?[39m
+  ?[36m↷?[39m ?[36m?[1mThen ?[22mUser verifies Success message is displayed?[39m ?[90m# com.ilcarro.stepDefinitions.LoginSteps.verify_Success_login()?[39m
+  ?[36m↷?[39m ?[36m?[1mAnd ?[22mUser closes browser?[39m                         ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.quit_browser()?[39m
+]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+февр. 14, 2026 1:21:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 145, returning the closest version; found: 144; Please update to a Selenium version that supports CDP version 145
+]]></system-err>
+</testsuite>

@@ -1,0 +1,53 @@
+package com.ilcarro.stepDefinitions;
+
+import com.ilcarro.pages.HomePage;
+import com.ilcarro.pages.LoginPage;
+import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+
+import static com.ilcarro.pages.BasePage.driver;
+
+public class LoginSteps {
+
+    LoginPage login;
+
+    @And("User clicks on Login link")
+    public void click_on_Login_link() {
+        new HomePage(driver).clickOnLoginLink();
+    }
+
+    @And("User enters correct data")
+    public void enter_correct_data() {
+        login = new LoginPage(driver);
+        login.enterData("nata.gavrish.78@gmail.com","Nata%$#1978");
+    }
+
+    @Then("User clicks on Yalla button")
+    public void click_on_Yalla_button() {
+        login.clickOnYalla();
+    }
+
+    @Then("User verifies Success message is displayed")
+    public void verify_Success_login() {
+        login.verifyMessage("Logged in success");
+    }
+
+    @And("User enters correct email and wrong password")
+    public void enter_wrong_password(DataTable table) {
+        login = new LoginPage(driver);
+        login.enterWrongPassword(table);
+    }
+
+    @Then("User verifies Error message is displayed")
+    public void verify_Error_login() {
+        login.verifyMessage("Login or Password incorrect");
+    }
+
+
+
+
+    }
+
+
+
